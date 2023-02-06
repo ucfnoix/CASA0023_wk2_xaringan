@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Are we ready to meet LiDAR &amp; RADAR?</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Eunyoung Choi" />
+    <script src="libs/header-attrs-2.19/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/metropolis.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/metropolis-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Are we ready to meet LiDAR &amp; RADAR?
+]
+.subtitle[
+## <br/>with xaringan
+]
+.author[
+### Eunyoung Choi
+]
+.institute[
+### CASA0023 Week 2
+]
+.date[
+### 2023/01/17 (updated: 2023-02-06)
+]
+
+---
+
+
+
+
+class: inverse, center, middle
+
+# Hello LiDAR (feat.RADAR) ✋
+
+---
+
+# Summary
+
+
+## LiDAR
+
+* **Light** Detection And Ranging
+ * to measure and scan the return time by emitting millions of laser pulses per second
+ * to create high-resolution models of ground elevation with a vertical accuracy of 10cm
+* Usually compared with RADAR 
+
+
+## RADAR
+ * **RAdio** Detection And Ranging
+ * to determine the distance, angle of objects relative to the site using radio waves
+
+
+## Both are used complementarily!
+---
+
+# Summary
+
+.pull-left[
+* LiDAR can 
+ * High precision 
+ * Measure elevation and orientation accurately
+ * Detect temperature and object 
+ * Scan surroundings at night
+ 
+&lt;img src="960x0.jpg" width="85%" style="display: block; margin: auto;" /&gt;
+.center[LiDAR sensor image. [Source:Forbes](https://www.forbes.com/sites/sabbirrangwala/2020/04/12/there-must-be-860-ways-to-build-an-av-lidarpart-1/?sh=48144d69545c)]  
+]
+
+.pull-right[
+* Compared to RADAR, LiDAR is...
+ * High power consumption
+ * not suitable for extensive navigation due to sensor limitations
+ * Highly influenced by the environment (e.g. humidity, snow, rain, fog etc.)
+]
+
+---
+
+# Application
+
+* **LiDAR**
+ * Mounted on aircraft or satellites for precise geographical and environmental observations
+ * a crackdown on motor vehicle speed violations
+ * Laser scanner for 3D image restoration
+ * 3D image sensor for driverless vehicles
+
+* **RADAR**
+ * Detects aircraft, ships, spacecraft, miles, cars, and terrain
+ * Finding the depth of the deep sea 
+ * Used for weather observation, emergency braking devices of vehicles and rear detection system
+
+* **Both** are most recently used in **self-driving car technology** 🚗
+
+---
+
+# Reflection 
+
+.pull-left[
+
+]
+* Learning Lidar as one of the remote sensing data measuring devices, I was surprised as we use cutting-edge technology in our daily lives. For example, I thought it was used only for aerial photography, but even radio waves are used in microwave ovens!
+
+* I am looking forward to how this technology, which is currently the core of autonomous vehicle development, will change our future. And I wish this technology could use as a solution for climate change.
+
+.pull-right[]
+&lt;img src="6c6a37ee9787cc1585c5ce466b50f9da.gif" width="55%" style="display: block; margin: auto;" /&gt;
+.center[[Source:Pinterest](https://www.pinterest.com/pin/93590498485503110/)]  
+]
+
+---
+
+# Reference
+
+* ScienceNewsExplores (2023). Explainer: What are lidar, radar and sonar?-Three similar technologies rely on echoes to map the unseen. [Online]. [Accessed 2023]. Available from: https://www.snexplores.org/article/explainer-what-are-lidar-radar-and-sonar
+
+* USGS science for a changing world (2023). What is Lidar data and where can I download it?. [Online]. [Accessed 2023]. Available from: https://www.usgs.gov/faqs/what-lidar-data-and-where-can-i-download-it
+
+
+```
+## You haven't cited any references in this bibliography yet.
+```
+
+NULL
+
+&lt;a name=cite-gohring_radarlidar_2011&gt;&lt;/a&gt;([Göhring, Wang, Schnürmacher, and Ganjineh, 2011](#bib-gohring_radarlidar_2011))
+
+---
+
+class: inverse, center, middle
+
+# DONE! Fancy a cuppa? 🍵
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "tomorrow",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
