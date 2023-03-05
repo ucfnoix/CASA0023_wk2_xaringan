@@ -30,7 +30,7 @@ BibOptions(check.entries = FALSE,
            hyperlink = TRUE, 
            dashed = FALSE, 
            no.print.fields=c("doi", "url", "urldate", "issn"))
-myBib <- ReadBib("./reference_xaringan.bib", check = FALSE)
+myBib <- ReadBib("./reference.bib", check = FALSE)
 ```
 
 class: inverse, center, middle
