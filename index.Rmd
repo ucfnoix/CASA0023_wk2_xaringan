@@ -30,7 +30,7 @@ BibOptions(check.entries = FALSE,
            hyperlink = TRUE, 
            dashed = FALSE, 
            no.print.fields=c("doi", "url", "urldate", "issn"))
-myBib <- ReadBib("./reference.bib", check = FALSE)
+myBib <- ReadBib("./library.bib", check = FALSE)
 ```
 
 class: inverse, center, middle
@@ -75,6 +75,8 @@ knitr::include_graphics('images/960x0.jpg')
  * to determine the distance, angle of objects relative to the site using radio waves
  * LiDAR and RADAR are used complementarily!
 
+Source: `r Citet(myBib,"gohring2011")`
+
 ---
 
 # Application
@@ -91,6 +93,7 @@ knitr::include_graphics('images/960x0.jpg')
  * Used for weather observation, emergency braking devices of vehicles and rear detection system
 
 #### **Both** are most recently used in **self-driving car technology** `r emo::ji("car")`
+Source : `r Citet(myBib,"campbell2018")`
 
 ---
 
@@ -106,12 +109,15 @@ knitr::include_graphics('images/6c6a37ee9787cc1585c5ce466b50f9da.gif')
 .center[[Source:Pinterest](https://www.pinterest.com/pin/93590498485503110/)]  
 
 ---
-
 # Reference
 
 ```{r echo=FALSE, results='asis', warning=FALSE, message=FALSE}
 PrintBibliography(myBib)
 ```
+
+Bridges,A. 2015. Explainer: What are lidar, radar and sonar?. [Online]. [Accessed 1 May 2015]. Available from: https://www.snexplores.org/article/explainer-what-are-lidar-radar-and-sonar
+
+USGS science for a changing world. 2023. What is Lidar data and where can I download it?. [Online]. [Accessed 23 March 2023]. Available from: https://www.usgs.gov/faqs/what-lidar-data-and-where-can-i-download-it
 
 ---
 
